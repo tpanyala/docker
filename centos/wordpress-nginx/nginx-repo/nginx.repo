@@ -1,0 +1,10 @@
+#To add nginx yum repository, create a file named /etc/yum.repos.d/nginx.repo and paste one of the configurations below and once done, run "yum install nginx"
+
+[nginx]
+name=nginx repo
+
+# Due to differences between how CentOS, RHEL, and Scientific Linux populate the $releasever variable, it is necessary to manually replace $releasever with either "5" (for 5.x) or "6" (for 6.x), depending upon your OS version.
+baseurl=http://nginx.org/packages/centos/6/$basearch/
+
+gpgcheck=0
+enabled=1

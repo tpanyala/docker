@@ -1,7 +1,6 @@
-Readme.txt
 
 # To build the docker, run the following command from the directory where the Dockerfile is located
-docker build .
+docker -t vmw-mysql-img build .
 
 # To run the container with a static name
 docker run -p 3306 --name <blogs-mysql> -e MY_SQL_ROOT_PASSWORD=<root-password-for-mysql>  -d mysql
